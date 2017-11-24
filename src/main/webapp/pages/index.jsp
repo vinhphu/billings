@@ -224,6 +224,5 @@
 		</strong> All rights reserved. </footer>
 	</div>
 	<!-- ./wrapper -->
-
 </body>
 </html>
