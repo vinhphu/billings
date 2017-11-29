@@ -122,11 +122,11 @@
 			<ul class="treeview-menu">
 				<li><a href="admin_user.jsp"><i class="fa fa-users"></i>
 						Quản lí người dùng</a></li>
-				<li><a href="admin_congti.jsp"><i
+				<li><a href="admin_company.jsp"><i
 						class="glyphicon glyphicon-briefcase"></i> Quản lí công ti</a></li>
 				<li><a href="admin_group.jsp"><i
 						class="glyphicon glyphicon-th-large"></i> Quản lí phòng/ban</a></li>
-				<li><a href="admin_ext.jsp"><i
+				<li><a href="admin_extension.jsp"><i
 						class="glyphicon glyphicon-th"></i> Quản lí Extension</a></li>
 			</ul></li>
 		<li><a href="guide.jsp"><i class="fa fa-book"></i> <span>Hướng

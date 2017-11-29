@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Users Add</title>
+<title>Extension add</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -53,13 +53,13 @@
 
 			<!-- Content Header (Page header) -->
 			<section class="content-header">
-			<h1>Thêm người dùng mới</h1>
+			<h1>Thêm công ti mới</h1>
 			<ol class="breadcrumb">
 				<li><a href="index.jsp"><i class="fa fa-dashboard"></i>
 						BillingsSystem</a></li>
 				<li><a href="#">Quản trị hệ thống</a></li>
-				<li><a href="admin_user.jsp">Quản lí người dùng</a></li>
-				<li class="active">Thêm người dùng</li>
+				<li><a href="admin_extension.jsp">Quản lí Extension</a></li>
+				<li class="active">Thêm Extension</li>
 			</ol>
 			</section>
 
@@ -71,7 +71,7 @@
 					<div class="box box-primary">
 						<div class="box-header with-border">
 							<h3 class="box-title">
-								<i class="fa fa-pencil-square"></i> Thông tin người dùng
+								<i class="fa fa-pencil-square"></i> Thông tin Extension
 							</h3>
 						</div>
 
@@ -80,48 +80,61 @@
 
 								<!-- Form group -->
 								<div class="form-group">
-									<label for="input_username" class="col-sm-2 control-label">Tên
-										tài khoản: </label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" name="username"
-											placeholder="Username">
+									<label for="input_extension" class="col-sm-2 control-label">Extension:
+									</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="txt_extension"
+											placeholder="Extension name">
 									</div>
 								</div>
 								<!-- Form group -->
 								<div class="form-group">
-									<label for="inputPwd" class="col-sm-2 control-label">Mật
-										khẩu: </label>
-									<div class="col-sm-5">
-										<input type="password" class="form-control" name="password"
-											placeholder="Password">
+									<label for="inputDauSo" class="col-sm-2 control-label">Đầu
+										số: </label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="txt_DauSo"
+											placeholder="Number">
 									</div>
 								</div>
 								<!-- Form group -->
 								<div class="form-group">
-									<label for="inputPwdConfirm" class="col-sm-2 control-label">Xác
-										nhận mật khẩu: </label>
-									<div class="col-sm-5">
-										<input type="password" class="form-control" name="pwd_confirm"
-											placeholder="Confirm Password">
-									</div>
-								</div>
-								<!-- Form group -->
-								<div class="form-group">
-									<label for="inputRole" class="col-sm-2 control-label">Quyền
-										truy cập: </label>
-									<div class="col-sm-5">
+									<label for="inputGroup" class="col-sm-2 control-label">Phòng/ban:
+									</label>
+									<div class="col-sm-4">
 										<select class="form-control">
-											<option selected="">Access</option>
+											<option selected="">Group name</option>
 
 											<!-- KẾT NỐI LẤY DỮ LIỆU HIỂN THỊ TỪ DATABASE -->
 
 										</select>
 									</div>
+									<div class="col-sm-2">
+										<a href="admin_group-add.jsp"
+											class="form-control btn btn-success">Thêm phòng/ban</a>
+									</div>
+								</div>
+								<!-- Form group -->
+								<div class="form-group">
+									<label for="inputCompany" class="col-sm-2 control-label">Công
+										ti: </label>
+									<div class="col-sm-4">
+										<select class="form-control">
+											<option selected="">Company name</option>
+
+											<!-- KẾT NỐI LẤY DỮ LIỆU HIỂN THỊ TỪ DATABASE -->
+
+										</select>
+									</div>
+									<div class="col-sm-2">
+										<a href="admin_company-add.jsp"
+											class="form-control btn btn-success">Thêm công ti</a>
+									</div>
 								</div>
 							</div>
 							<!--  -->
 							<div class="box-footer text-center">
-								<button type="submit" class="btn btn-primary">Xác nhận</button>
+								<button type="submit" class="btn btn-primary">Xác
+									nhận</button>
 							</div>
 							<div class="alert alert-success alert-dismissible">
 								<button type="button" class="close" data-dismiss="alert"

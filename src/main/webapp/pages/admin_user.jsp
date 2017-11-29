@@ -98,7 +98,7 @@
 						<form action="#" class="form-horizontal">
 							<div class="box-body">
 								<a href="admin_user-add.jsp" class="btn btn-primary btn-block">
-									<i class="ion-person-add"></i> Thêm
+									<i class="ion-person-add"></i> Thêm người dùng
 								</a>
 							</div>
 						</form>
@@ -135,7 +135,7 @@
 										<th>Tác vụ</th>
 									</tr>
 								</thead>
-								<tbody>
+								<tbody id="myTable">
 
 
 									<!-- LIÊN KẾT VỚI DATABASE ĐỂ LẤY DỮ LIỆU TABLE -->

@@ -179,7 +179,7 @@
 							<h3 class="box-title">Hướng dẫn</h3>
 						</div>
 						<div class="box-body">
-							<h4>Giới thiệu NLS Online</h4>
+							<h4>Giới thiệu</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								Eaque dolores odit sed quae, asperiores, doloremque expedita
 								nobis, non repellendus quod, nam vel accusantium. Magnam esse,
