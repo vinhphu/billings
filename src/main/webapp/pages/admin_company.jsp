@@ -44,7 +44,6 @@
 <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
 
-
 		<!-- Include this in all index page -->
 		<jsp:include page="sideBar.jsp"></jsp:include>
 		<!-- /.Include this in all index page -->
@@ -97,7 +96,7 @@
 						</div>
 						<form action="#" class="form-horizontal">
 							<div class="box-body">
-								<a href="admin_user-add.jsp" class="btn btn-primary btn-block">
+								<a href="admin_company-add.jsp" class="btn btn-primary btn-block">
 									<i class="glyphicon glyphicon-plus"></i> Thêm công ti
 								</a>
 							</div>
