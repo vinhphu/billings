@@ -4,31 +4,25 @@
 	<groupId>athl</groupId>
 	<artifactId>billings</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<name>billings</name>
 	<url>http://maven.apache.org</url>
+
 	<properties>
 		<spring-framework.version>4.3.6.RELEASE</spring-framework.version>
 		<springsecurity.version>4.2.2.RELEASE</springsecurity.version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
-		<org.aspectj-version>1.7.4</org.aspectj-version>
+		<org.aspectj-version>1.7.5</org.aspectj-version>
 		<org.slf4j-version>1.7.21</org.slf4j-version>
-
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>ckfinder-mvn-repo-on-github</id>
-			<url>https://raw.github.com/buzheng/ckfinder-mvn-repo/master/</url>
-		</repository>
-	</repositories>
-
-
 	<dependencies>
+
+		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -80,22 +74,23 @@
 			<artifactId>spring-web</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.3.10.RELEASE</version>
+			<version>5.0.2.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>${spring-framework.version}</version>
+			<version>5.0.2.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${spring-framework.version}</version>
+			<version>5.0.2.RELEASE</version>
 			<exclusions>
 				<!-- Exclude Commons Logging in favor of SLF4j -->
 				<exclusion>
@@ -106,7 +101,7 @@
 		</dependency>
 		<!-- close spring framework -->
 
-		<!-- hibernate -->
+		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -136,7 +131,7 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>${org.aspectj-version}</version>
+			<version>1.8.13</version>
 		</dependency>
 
 		<!-- Logging -->
@@ -160,7 +155,6 @@
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
 		</dependency>
-
 
 		<dependency>
 			<groupId>log4j</groupId>
@@ -225,6 +219,7 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.5</version>
 		</dependency>
+
 		<!-- ckeditor -->
 		<dependency>
 			<groupId>com.ckeditor</groupId>
@@ -236,9 +231,46 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.11</version>
 		</dependency>
-
 	</dependencies>
+
 	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<additionalProjectnatures>
+
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<configuration>
+					<mainClass>org.test.int1.Main</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
 		<finalName>billings</finalName>
 	</build>
 </project>
