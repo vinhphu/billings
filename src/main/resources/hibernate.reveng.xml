@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="blocks" match-catalog="billings"></table-filter>
+	<table-filter match-name="congty" match-catalog="billings"></table-filter>
+	<table-filter match-name="dauso" match-catalog="billings"></table-filter>
+	<table-filter match-name="extension" match-catalog="billings"></table-filter>
+	<table-filter match-name="log_call" match-catalog="billings"></table-filter>
+	<table-filter match-name="phongban" match-catalog="billings"></table-filter>
+	<table-filter match-name="taikhoan_nguoidung"
+		match-catalog="billings">
+	</table-filter>
+</hibernate-reverse-engineering>

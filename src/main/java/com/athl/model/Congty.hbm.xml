@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Dec 6, 2017 10:05:42 PM by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="billings" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.athl.model.Congty" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="congty">
+        <id name="congtyId" type="string">
+            <column length="10" name="congtyID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="tenCongty" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="ten_congty"/>
+        </property>
+        <property generated="never" lazy="false" name="logo" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="logo"/>
+        </property>
+        <property generated="never" lazy="false" name="masoThue" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="maso_thue"/>
+        </property>
+        <property generated="never" lazy="false" name="diaChi" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="dia_chi"/>
+        </property>
+        <property generated="never" lazy="false" name="dienthoai" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="dienthoai"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="email"/>
+        </property>
+        <property generated="never" lazy="false" name="tiLeMakeUp" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="ti_le_make_up" precision="22" scale="0"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="dausos" optimistic-lock="true" sort="unsorted" table="dauso">
+            <key on-delete="noaction">
+                <column length="10" name="congtyID"/>
+            </key>
+            <one-to-many class="com.athl.model.Dauso" embed-xml="true" not-found="exception"/>
+        </set>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="phongbans" optimistic-lock="true" sort="unsorted" table="phongban">
+            <key on-delete="noaction">
+                <column length="10" name="congtyID"/>
+            </key>
+            <one-to-many class="com.athl.model.Phongban" embed-xml="true" not-found="exception"/>
+        </set>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="taikhoanNguoidungs" optimistic-lock="true" sort="unsorted" table="taikhoan_nguoidung">
+            <key on-delete="noaction">
+                <column length="10" name="congtyID"/>
+            </key>
+            <one-to-many class="com.athl.model.TaikhoanNguoidung" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

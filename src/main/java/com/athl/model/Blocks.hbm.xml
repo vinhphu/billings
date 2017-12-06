@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Dec 6, 2017 10:05:42 PM by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="billings" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.athl.model.Blocks" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="blocks">
+        <composite-id class="com.athl.model.BlocksId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="loaiCuocgoi" type="string">
+                <column length="2" name="loai_cuocgoi"/>
+            </key-property>
+            <key-property name="nhamangId" type="string">
+                <column length="5" name="nhamang_id"/>
+            </key-property>
+            <key-property name="maCuocgoi" type="string">
+                <column length="5" name="ma_cuocgoi"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="block1s" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="block1s" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="block6s" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="block6s" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="block10s" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="block10s" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="block1m" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="block1m" precision="22" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>
