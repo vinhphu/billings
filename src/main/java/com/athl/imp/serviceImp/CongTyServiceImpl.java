@@ -1,5 +1,6 @@
 package com.athl.imp.serviceImp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.rmi.CORBA.Stub;
@@ -41,7 +42,7 @@ public class CongTyServiceImpl implements CongTyService {
 	}
 
 	@Transactional
-	public List getAllCongTy() {
+	public ArrayList<Congty> getAllCongTy(){
 		return congTyDao.getAllCongTy();
 	}
 
