@@ -14,17 +14,18 @@ import com.athl.model.TaikhoanNguoidung;
 import com.athl.service.TaiKhoanService;
 
 @Controller
+@RequestMapping("/admin_user")
 public class TaiKhoanController {
 
-	@Autowired(required = true)
+	@Autowired
 	private TaiKhoanService taiKhoanService;
 
-	@RequestMapping("/index")
+	@RequestMapping(value = "/admin_user", method = RequestMethod.GET)
 	public String setUpForm(Map<String, Object> map) {
 		TaikhoanNguoidung taikhoan = new TaikhoanNguoidung();
 		map.put("taikhoan", taikhoan);
 		map.put("taikhoanlist", taiKhoanService.getAllTaikhoan());
-		return "taikhoan";
+		return "admin_user";
 	}
 
 	@RequestMapping(value = "taikhoan.do", method = RequestMethod.POST)

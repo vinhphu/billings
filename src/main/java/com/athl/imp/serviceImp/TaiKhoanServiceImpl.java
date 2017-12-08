@@ -12,7 +12,7 @@ import com.athl.model.TaikhoanNguoidung;
 import com.athl.service.TaiKhoanService;
 
 @Service
-public class TaiKhoanServiceIplm implements TaiKhoanService {
+public class TaiKhoanServiceImpl implements TaiKhoanService {
 
 	@Autowired
 	private TaiKhoanDao taiKhoanDao;

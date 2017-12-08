@@ -14,6 +14,7 @@ public interface TaiKhoanService {
 
 	public TaikhoanNguoidung getTaikhoan(String taikhoanid);
 
+	// Lay danh sach tai khoan
 	public List getAllTaikhoan();
 
 }
