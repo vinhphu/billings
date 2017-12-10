@@ -1,5 +1,6 @@
 package com.athl.DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.athl.model.TaikhoanNguoidung;
@@ -13,7 +14,7 @@ public interface TaiKhoanDao {
 	public void delete(String taikhoanid);
 
 	public TaikhoanNguoidung getTaikhoan(String taikhoanid);
-
-	public List getAllTaikhoan();
+	
+	public ArrayList<TaikhoanNguoidung> getAllTaiKhoan();
 
 }

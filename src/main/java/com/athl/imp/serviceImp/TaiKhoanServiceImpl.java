@@ -1,5 +1,6 @@
 package com.athl.imp.serviceImp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -39,8 +40,8 @@ public class TaiKhoanServiceImpl implements TaiKhoanService {
 	}
 
 	@Transactional
-	public List getAllTaikhoan() {
-		return taiKhoanDao.getAllTaikhoan();
+	public ArrayList<TaikhoanNguoidung> getAllTaiKhoan(){
+		return taiKhoanDao.getAllTaiKhoan();
 	}
 
 }

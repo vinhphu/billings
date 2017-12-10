@@ -1,5 +1,6 @@
 package com.athl.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.athl.model.*;
@@ -14,7 +15,6 @@ public interface TaiKhoanService {
 
 	public TaikhoanNguoidung getTaikhoan(String taikhoanid);
 
-	// Lay danh sach tai khoan
-	public List getAllTaikhoan();
+	public ArrayList<TaikhoanNguoidung> getAllTaiKhoan();
 
 }

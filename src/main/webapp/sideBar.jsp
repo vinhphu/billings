@@ -12,21 +12,24 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 	name="viewport">
 <!-- Bootstrap 3.3.6 -->
-<link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.min.css" />">
+<link rel="stylesheet"
+	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />">
 <!-- Font Awesome -->
 <link rel="stylesheet"
-	href="<c:url value="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />">
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
 <!-- Ionicons -->
 <link rel="stylesheet"
-	href="<c:url value="/https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />">
+	href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
 <!-- Theme style -->
-<link rel="stylesheet" href="<c:url value="/dist/css/AdminLTE.min.css" />">
+<link rel="stylesheet"
+	href="<c:url value="/resources/dist/css/AdminLTE.min.css" />">
 <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-<link rel="stylesheet" href="<c:url value="/dist/css/skins/_all-skins.min.css" />">
+<link rel="stylesheet"
+	href="<c:url value="/resources/dist/css/skins/_all-skins.min.css" />">
 <!-- bootstrap wysihtml5 - text editor -->
 <link rel="stylesheet"
-	href="<c:url value="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />">
+	href="<c:url value="/resources/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" />">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,7 +56,7 @@
 			<!-- User Account: style can be found in dropdown.less -->
 			<li class="dropdown user user-menu"><a href="#"
 				class="dropdown-toggle" data-toggle="dropdown"> <img
-					src="dist/img/user2-160x160.jpg" class="user-image"
+					src="/dist/img/user2-160x160.jpg" class="user-image"
 					alt="User Image"> <span class="hidden-xs">Hieuuuuuuu</span>
 			</a>
 				<ul class="dropdown-menu">
@@ -135,33 +138,43 @@
 	<!-- REQUIRED JS SCRIPTS -->
 
 	<!-- jQuery 2.2.0 -->
-	<script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
-	<script src="plugins/datatables/jquery.dataTables.min.js"></script>
-	<!-- Bootstrap 3.3.6 -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- Select2 -->
-	<script src="plugins/select2/select2.full.min.js"></script>
-	<!-- InputMask -->
-	<script src="plugins/input-mask/jquery.inputmask.js"></script>
-	<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-	<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
-	<!-- date-range-picker -->
 	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-	<script src="plugins/daterangepicker/daterangepicker.js"></script>
+		src="<c:url value="/resources/plugins/jQuery/jQuery-2.2.0.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/plugins/datatables/jquery.dataTables.min.js" />"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<script
+		src="<c:url value="/resources/bootstrap/js/bootstrap.min.js" />"></script>
+	<!-- Select2 -->
+	<script
+		src="<c:url value="/resources/plugins/select2/select2.full.min.js" />"></script>
+	<!-- InputMask -->
+	<script
+		src="<c:url value="/resources/plugins/input-mask/jquery.inputmask.js" />"></script>
+	<script
+		src="<c:url value="/resources/plugins/input-mask/jquery.inputmask.date.extensions.js" />"></script>
+	<script
+		src="<c:url value="/resources/plugins/input-mask/jquery.inputmask.extensions.js" />"></script>
+	<script
+		src="<c:url value="/resources/plugins/daterangepicker/daterangepicker.js" />"></script>
 	<!-- bootstrap datepicker -->
-	<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script
+		src="<c:url value="/resources/plugins/datepicker/bootstrap-datepicker.js" />"></script>
 	<!-- bootstrap color picker -->
-	<script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+	<script
+		src="<c:url value="/resources/plugins/colorpicker/bootstrap-colorpicker.min.js" />"></script>
 	<!-- bootstrap time picker -->
-	<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+	<script
+		src="<c:url value="/resources/plugins/timepicker/bootstrap-timepicker.min.js" />"></script>
 	<!-- SlimScroll 1.3.0 -->
-	<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+	<script
+		src="<c:url value="/resources/plugins/slimScroll/jquery.slimscroll.min.js" />"></script>
 	<!-- iCheck 1.0.1 -->
-	<script src="plugins/iCheck/icheck.min.js"></script>
+	<script src="<c:url value="/resources/plugins/iCheck/icheck.min.js" />"></script>
 	<!-- FastClick -->
-	<script src="plugins/fastclick/fastclick.js"></script>
+	<script
+		src="<c:url value="/resources/plugins/fastclick/fastclick.js" />"></script>
 	<!-- AdminLTE App -->
-	<script src="dist/js/app.min.js"></script>
+	<script src="<c:url value="/resources/dist/js/app.min.js" />"></script>
 </body>
 </html>
