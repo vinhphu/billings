@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">01667781178</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/billings</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.current_session_context_class">thread</property>
-        <property name="hibernate.default_schema">billings</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
-        <property name="hibernate.search.autoregister_listeners">true</property>
-        <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.validator.apply_to_ddl">false</property>
-        <mapping class="com.athl.model.Congty"/>
-        <mapping class="com.athl.model.TaikhoanNguoidung"/>
-        <mapping class="com.athl.model.Dauso"/>
-        <mapping class="com.athl.model.Extension"/>
-        <mapping class="com.athl.model.Phongban"/>
-        <mapping class="com.athl.model.LogCall"/>
-        <mapping class="com.athl.model.Blocks"/>
-    </session-factory>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">123456</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/billings</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.default_schema">billings</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.search.autoregister_listeners">true</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping class="com.athl.model.Congty" />
+		<mapping class="com.athl.model.TaikhoanNguoidung" />
+		<mapping class="com.athl.model.Dauso" />
+		<mapping class="com.athl.model.Extension" />
+		<mapping class="com.athl.model.Phongban" />
+		<mapping class="com.athl.model.LogCall" />
+		<mapping class="com.athl.model.Blocks" />
+	</session-factory>
 </hibernate-configuration>

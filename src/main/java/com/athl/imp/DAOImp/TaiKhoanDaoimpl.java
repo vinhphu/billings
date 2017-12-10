@@ -16,22 +16,20 @@ import com.athl.utils.*;;
 
 @Repository
 public class TaiKhoanDaoimpl implements TaiKhoanDao {
+
 	@Autowired
 	private SessionFactory session;
 
 	public void add(TaikhoanNguoidung taikhoan) {
 		session.getCurrentSession().save(taikhoan);
-
 	}
 
 	public void edit(TaikhoanNguoidung taikhoan) {
 		session.getCurrentSession().update(taikhoan);
-
 	}
 
 	public void delete(String taikhoanid) {
 		session.getCurrentSession().delete(getTaikhoan(taikhoanid));
-
 	}
 
 	public TaikhoanNguoidung getTaikhoan(String taikhoanid) {
@@ -45,8 +43,4 @@ public class TaiKhoanDaoimpl implements TaiKhoanDao {
 	     transaction.commit();
 	     return list;
 	}
-	public static void main(String[] args) {
-		System.out.println(new TaiKhoanDaoimpl().getAllTaiKhoan().size());
-	}
-
-	}
+}
