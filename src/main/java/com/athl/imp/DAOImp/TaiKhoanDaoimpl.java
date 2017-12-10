@@ -16,7 +16,7 @@ import com.athl.utils.*;;
 
 @Repository
 public class TaiKhoanDaoimpl implements TaiKhoanDao {
-	
+
 	@Autowired
 	private SessionFactory session;
 
@@ -42,9 +42,5 @@ public class TaiKhoanDaoimpl implements TaiKhoanDao {
 	     ArrayList<TaikhoanNguoidung> list = (ArrayList<TaikhoanNguoidung>) query.list();
 	     transaction.commit();
 	     return list;
-	}
-	
-	public static void main(String[] args) {
-		System.out.println(new TaiKhoanDaoimpl().getAllTaiKhoan());
 	}
 }

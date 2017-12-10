@@ -14,7 +14,7 @@ public interface TaiKhoanDao {
 	public void delete(String taikhoanid);
 
 	public TaikhoanNguoidung getTaikhoan(String taikhoanid);
-	
+
 	public ArrayList<TaikhoanNguoidung> getAllTaiKhoan();
 
 }
